@@ -528,6 +528,10 @@
             );
 
             const data = await response.json();
+            document.getElementById("metricScore").innerHTML=data.public_repos;
+            document.getElementById("metricSilent").innerHTML =data.followers + " Followers";
+            document.getElementById("metricStreak").innerHTML =data.following + " Following";
+
             if (data.message==="Not Found"){
                 document.getElementById("result").innerHTML="User Not Found";
                 return;
