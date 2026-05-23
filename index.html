@@ -256,32 +256,133 @@
         <main class="flex-1 p-6 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-6">
             
           
-            <div class="lg:col-span-8 space-y-6">
+            <div class="lg:col-span-10 space-y-6">
                 
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="relative grid grid-cols-2 sm:grid-cols-4 gap-4">
+
                     <div class="bg-cream border border-clay/20 p-4 rounded-xl shadow-sm">
-                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">Intelligence Score</p>
-                        <h3 class="heading-font text-2xl font-bold text-espresso mt-1" id="metricScore">94<span class="text-xs text-accentGreen ml-1">▲ 4%</span></h3>
-                        <p class="text-[10px] text-clay/80 mt-1">Weighted Quality / Activity Metric</p>
+                
+                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">
+                            Intelligence Score
+                        </p>
+                
+                        <h3 
+                            class="heading-font text-2xl font-bold text-espresso mt-1"
+                            id="metricScore"
+                        >
+                            94
+                            <span class="text-xs text-accentGreen ml-1">
+                                ▲ 4%
+                            </span>
+                        </h3>
+                
+                        <p class="text-[10px] text-clay/80 mt-1">
+                            Weighted Quality / Activity Metric
+                        </p>
+                
                     </div>
+                
                     <div class="bg-cream border border-clay/20 p-4 rounded-xl shadow-sm">
-                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">Silent Contributions</p>
-                        <h3 class="heading-font text-2xl font-bold text-espresso mt-1" id="metricSilent">42 Units</h3>
-                        <p class="text-[10px] text-clay/80 mt-1">Reviews, mentorship, syncs</p>
+                
+                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">
+                            Silent Contributions
+                        </p>
+                
+                        <h3 
+                            class="heading-font text-2xl font-bold text-espresso mt-1"
+                            id="metricSilent"
+                        >
+                            42 Units
+                        </h3>
+                
+                        <p class="text-[10px] text-clay/80 mt-1">
+                            Reviews, mentorship, syncs
+                        </p>
+                
                     </div>
+                
                     <div class="bg-cream border border-clay/20 p-4 rounded-xl shadow-sm">
-                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">Workload Status</p>
-                        <h3 class="heading-font text-xl font-bold text-accentGreen mt-1.5" id="metricWorkload">Optimal Balance</h3>
-                        <p class="text-[10px] text-clay/80 mt-1">Burnout risk factor: Minimal</p>
+                
+                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">
+                            Workload Status
+                        </p>
+                
+                        <h3 
+                            class="heading-font text-xl font-bold text-accentGreen mt-1.5"
+                            id="metricWorkload"
+                        >
+                            Optimal Balance
+                        </h3>
+                
+                        <p class="text-[10px] text-clay/80 mt-1">
+                            Burnout risk factor: Minimal
+                        </p>
+                
                     </div>
-                    <div class="bg-cream border border-clay/20 p-4 rounded-xl shadow-sm">
-                        <p class="text-xs text-clay uppercase tracking-wider font-semibold">Streak Engine</p>
-                        <h3 class="heading-font text-2xl font-bold text-accentAmber mt-1" id="metricStreak">12 Days </h3>
-                        <p class="text-[10px] text-clay/80 mt-1">High consistency timeline</p>
+                
+                    <div class="flex gap-2">
+                
+                        <div class="bg-cream border border-clay/20 p-4 rounded-xl shadow-sm flex-1">
+                
+                            <p class="text-xs text-clay uppercase tracking-wider font-semibold">
+                                Streak Engine
+                            </p>
+                
+                            <h3 
+                                class="heading-font text-2xl font-bold text-accentAmber mt-1"
+                                id="metricStreak"
+                            >
+                                12 Days
+                            </h3>
+                
+                            <p class="text-[10px] text-clay/80 mt-1">
+                                High consistency timeline
+                            </p>
+                
+                        </div>
+                
+<div class="absolute top-0 right-[-140px] bg-cream border border-clay/20 p-2 rounded-xl shadow-sm w-[130px]">
+
+    <div class="flex flex-col items-center gap-1 mb-2">
+
+        <i 
+            data-lucide="toggle-left"
+            class="w-3 h-3 text-accentAmber"
+        ></i>
+
+        <span class="text-[8px] font-bold uppercase tracking-wider text-espresso">
+            Controls
+        </span>
+
+    </div>
+
+    <div class="flex flex-col gap-1">
+
+        <button
+            id="toggleBtnDev"
+            onclick="swapToRole('developer')"
+            class="text-[8px] font-semibold py-0.8 px-1.5 rounded border bg-espresso text-cream transition-all"
+        >
+            Developer
+        </button>
+
+        <button
+            id="toggleBtnAdmin"
+            onclick="swapToRole('admin')"
+            class="text-[8px] font-semibold py-0.8 px-1.5 rounded border bg-parchment border-clay/20 text-clay transition-all"
+        >
+            Admin
+        </button>
+
+    </div>
+
+</div>
+                
                     </div>
+                
                 </div>
 
-                <div id="developerContextView" class="space-y-6">
+                <div id="developerContextView" class="space-y-10">
                     <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
                         <div class="flex items-center justify-between mb-4">
                             <div>
@@ -342,39 +443,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
-                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-                            <div>
-                                <h2 class="heading-font text-lg font-bold text-espresso">Verified Proof-of-Work Engine</h2>
-                                <p class="text-xs text-clay">Transform raw logs directly into secure, highly granular verified work intelligence portfolios.</p>
-                            </div>
-                            <button onclick="exportProofOfWork()" class="bg-accentGreen text-cream hover:bg-espresso text-xs font-semibold px-4 py-2.5 rounded-lg transition-all flex items-center justify-center gap-2 self-start shadow-sm">
-                                <i data-lucide="file-down" class="w-4 h-4"></i> Export Verified Portfolio
-                            </button>
-                        </div>
-                        
-                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                            <div class="p-3 bg-parchment rounded-lg border border-clay/10">
-                                <div class="flex items-center gap-2 text-espresso font-medium text-xs">
-                                    <i data-lucide="linkedin" class="w-3.5 h-3.5"></i> LinkedIn Integration
-                                </div>
-                                <p class="text-[11px] text-clay mt-1">Inject dynamically refreshed, verified capability tokens directly into resume streams.</p>
-                            </div>
-                            <div class="p-3 bg-parchment rounded-lg border border-clay/10">
-                                <div class="flex items-center gap-2 text-espresso font-medium text-xs">
-                                    <i data-lucide="link" class="w-3.5 h-3.5"></i> Crypto-Signed URI
-                                </div>
-                                <p class="text-[11px] text-clay mt-1">Immutable public proof-of-work link ideal for onboarding or hiring checks.</p>
-                            </div>
-                            <div class="p-3 bg-parchment rounded-lg border border-clay/10">
-                                <div class="flex items-center gap-2 text-espresso font-medium text-xs">
-                                    <i data-lucide="award" class="w-3.5 h-3.5"></i> Skill-Syllabus Mapping
-                                </div>
-                                <p class="text-[11px] text-clay mt-1">Automatically highlights core specialities backed by real execution logs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <div id="adminContextView" class="space-y-6 hidden">
                     
@@ -476,100 +545,10 @@
 
             </div>
 
-            <div class="lg:col-span-4 space-y-6">
-                
-                <div class="bg-cream border border-clay/20 p-4 rounded-xl shadow-sm">
-                    <div class="flex items-center gap-2 mb-2">
-                        <i data-lucide="toggle-left" class="w-4 h-4 text-accentAmber"></i>
-                        <span class="text-xs font-bold uppercase tracking-wider text-espresso">Interactive Simulator Controls</span>
-                    </div>
-                    <p class="text-[11px] text-clay leading-relaxed mb-3">
-                        Swap execution states instantly below to see how SyncLogue alters interface layout modules seamlessly between individual contributors and admin pipelines.
-                    </p>
-                    <div class="grid grid-cols-2 gap-2">
-                        <button id="toggleBtnDev" onclick="swapToRole('developer')" class="text-xs font-semibold py-2 px-3 rounded border bg-espresso text-cream transition-all">Developer View</button>
-                        <button id="toggleBtnAdmin" onclick="swapToRole('admin')" class="text-xs font-semibold py-2 px-3 rounded border bg-parchment border-clay/20 text-clay transition-all">Admin View</button>
-                    </div>
-                </div>
+            
+             
 
-                <div class="bg-cream border border-clay/20 rounded-xl p-4 shadow-sm flex flex-col h-[340px]">
-                    <div class="flex items-center gap-2 pb-3 border-b border-clay/10 mb-3">
-                        <div class="p-1.5 bg-espresso text-cream rounded">
-                            <i data-lucide="bot" class="w-4 h-4"></i>
-                        </div>
-                        <div>
-                            <h3 class="heading-font text-sm font-bold text-espresso">SyncLogue AI Terminal</h3>
-                            <p class="text-[10px] text-clay">Contextual Workspace Intelligence Engine</p>
-                        </div>
-                    </div>
-
-                    <div id="aiChatWindowStream" class="flex-1 overflow-y-auto text-xs space-y-3 pr-1">
-                        <div class="bg-parchment/70 p-2.5 rounded-lg border border-clay/10 text-clay">
-                            Hello <span class="text-espresso font-semibold">Keerthana Ramalingam</span>. I hold context over current Git event queues, task states, and collaboration metrics. Click a prompt below to evaluate my engine output.
-                        </div>
-                    </div>
-
-                    <div class="mt-3 pt-3 border-t border-clay/5 space-y-1.5">
-                        <p class="text-[10px] uppercase tracking-wider font-semibold text-clay">Suggested Prompt Actions</p>
-                        <div class="flex flex-wrap gap-1">
-                            <button onclick="askAiAssistant('report')" class="text-[11px] text-espresso bg-parchment hover:bg-clay hover:text-cream px-2 py-1 rounded transition-colors text-left w-full truncate border border-clay/10">✨ "Generate my weekly summary narrative"</button>
-                            <button onclick="askAiAssistant('bottleneck')" class="text-[11px] text-espresso bg-parchment hover:bg-clay hover:text-cream px-2 py-1 rounded transition-colors text-left w-full truncate border border-clay/10">✨ "Who contributed most efficiently this sprint?"</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-cream border border-clay/20 rounded-xl p-4 shadow-sm">
-                    <div class="flex items-center justify-between mb-3">
-                        <h3 class="heading-font text-sm font-bold text-espresso flex items-center gap-1.5">
-                            <i data-lucide="sparkles" class="w-4 h-4 text-accentAmber"></i> Gamification & Badges
-                        </h3>
-                        <span class="text-[10px] bg-accentAmber/10 text-accentAmber px-1.5 py-0.5 rounded font-bold uppercase tracking-wider">Level 4</span>
-                    </div>
-
-                    <div class="space-y-3">
-                        <div>
-                            <div class="flex justify-between text-[11px] text-clay mb-1">
-                                <span>XP points to Level 5 Progression</span>
-                                <span class="font-bold text-espresso">740 / 1000 XP</span>
-                            </div>
-                            <div class="w-full bg-parchment h-1.5 rounded-full overflow-hidden">
-                                <div class="bg-accentAmber h-full" style="width: 74%"></div>
-                            </div>
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-2 text-xs">
-                            <div class="p-2 bg-parchment/60 rounded border border-clay/10 flex items-center gap-1.5" title="Earned for deep debugging support session patterns">
-                                <span class="text-base"></span>
-                                <div>
-                                    <p class="font-semibold text-espresso leading-none text-[11px]">Bug Hunter</p>
-                                    <p class="text-[9px] text-clay">Core System</p>
-                                </div>
-                            </div>
-                            <div class="p-2 bg-parchment/60 rounded border border-clay/10 flex items-center gap-1.5" title="Earned for high documentation updates volumes">
-                                <span class="text-base"></span>
-                                <div>
-                                    <p class="font-semibold text-espresso leading-none text-[11px]">Doc Hero</p>
-                                    <p class="text-[9px] text-clay">Knowledge Hub</p>
-                                </div>
-                            </div>
-                            <div class="p-2 bg-parchment/60 rounded border border-clay/10 flex items-center gap-1.5" title="Maintained coding streak metrics target">
-                                <span class="text-base"></span>
-                                <div>
-                                    <p class="font-semibold text-espresso leading-none text-[11px]">Streak King</p>
-                                    <p class="text-[9px] text-clay">12 Days Solid</p>
-                                </div>
-                            </div>
-                            <div class="p-2 bg-parchment/60 rounded border border-clay/10 flex items-center gap-1.5 opacity-50" title="Locked: Requires 5 peer review completions this week">
-                                <span class="text-base"></span>
-                                <div>
-                                    <p class="font-semibold text-espresso leading-none text-[11px]">Team Player</p>
-                                    <p class="text-[9px] text-clay">Locked Tier</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+              
                 <div class="bg-cream border border-clay/20 rounded-xl p-4 shadow-sm text-xs">
                     <h4 class="font-bold text-espresso uppercase tracking-wider text-[10px] mb-2 text-clay">Pipeline Integration Mapping</h4>
                     <div class="flex flex-wrap gap-1.5">
@@ -584,51 +563,8 @@
             </div>
         </main>
 
-        <div id="proofOfWorkModal" class="fixed inset-0 bg-espresso/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
-            <div class="bg-cream border-2 border-clay max-w-2xl w-full rounded-2xl shadow-2xl p-6 overflow-hidden flex flex-col max-h-[85vh]">
-                <div class="flex justify-between items-start border-b border-clay/20 pb-4 mb-4">
-                    <div>
-                        <span class="text-[9px] uppercase font-bold tracking-widest text-accentGreen bg-accentGreen/10 px-2 py-0.5 rounded">Cryptographically Verified Portfolio</span>
-                        <h3 class="heading-font text-xl font-bold text-espresso mt-1">SyncLogue verified_impact_portfolio.pdf</h3>
-                    </div>
-                    <button onclick="closeModal()" class="p-1.5 hover:bg-parchment text-clay rounded-lg transition-colors">
-                        <i data-lucide="x" class="w-5 h-5"></i>
-                    </button>
-                </div>
-
-                <div class="flex-1 overflow-y-auto space-y-4 p-2 bg-parchment/30 rounded-xl border border-clay/10 text-xs text-espresso font-mono leading-relaxed">
-                    <p class="text-center font-bold text-clay border-b border-dashed border-clay/20 pb-2">--- SYNCLOGUE ACCREDITED WORK TELEMETRY RECORD ---</p>
-                    <div>
-                        <strong>Contributed Identity Node:</strong>Keerthana Ramalingam<br>
-                        <strong>Assigned Engineering Speciality:</strong> Software Engineer // Backend & Infrastructure Pipeline Architecture
-                    </div>
-                    <hr class="border-clay/10">
-                    <div>
-                        <strong class="text-accentGreen">Verified Metrics Log Summaries (Past 14 Days):</strong><br>
-                        - Total Valid Non-Spam Production Commits: 28 Units<br>
-                        - Pull Request Ecosystem Implementations Merged: 6 Targets<br>
-                        - Code Quality Structural Review Matrix Verification: 14 Verifications
-                    </div>
-                    <div>
-                        <strong class="text-accentAmber">Silent Value System Contributions (Verified Beyond Commit Logs):</strong><br>
-                        - Cross-departmental Mentorship Intersect Events: 4 Traceable Incidents<br>
-                        - Technical System Wiki Documentation Enhancements: 8 Commits Checked
-                    </div>
-                    <hr class="border-clay/10">
-                    <div class="bg-cream p-3 rounded border border-clay/20">
-                        <span class="font-sans font-bold text-espresso text-[11px] block mb-1">AI Analytical Quality Interpretive Summary Statement</span>
-                        <p class="font-sans text-clay text-[11px] leading-relaxed">
-                            "The individual exhibits robust adherence to memory optimization protocols inside micro-service structural contexts. Manifests critical engineering habits through high levels of silent pull-request review activity, contributing value extensively to overall software team balance vectors."
-                        </p>
-                    </div>
-                </div>
-
-                <div class="mt-4 pt-4 border-t border-clay/20 flex justify-end gap-2">
-                    <button onclick="alert('Portfolio copied to operating system system clipboard as secure URI link token.')" class="px-4 py-2 text-xs font-semibold text-clay hover:bg-parchment rounded-lg border border-clay/20 transition-all">Copy Secure URI Link</button>
-                    <button onclick="window.print()" class="px-4 py-2 text-xs font-semibold bg-espresso text-cream hover:bg-clay rounded-lg transition-all">Download Signed PDF</button>
-                </div>
-            </div>
-        </div>
+                
+                    
 
         <footer class="border-t border-clay/10 bg-parchment/30 px-6 py-4 text-center text-xs text-clay">
             SyncLogue Workplace Intelligence System Matrix &copy; 2026. Custom Tailored for Engineering Teams Who Prioritize Real Contribution Value Metrics Over Crude Lines of Code Tracking.
