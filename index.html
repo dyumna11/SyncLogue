@@ -381,136 +381,158 @@
                     </div>
                 
                 </div>
+       <div>
 
-                <div id="developerContextView" class="space-y-10">
-                    <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
-                        <div class="flex items-center justify-between mb-4">
-                            <div>
-                                <h2 class="heading-font text-lg font-bold text-espresso">Productivity Tracking Engine (GitHub Direct)</h2>
-                                <p class="text-xs text-clay">Real-time source code mapping interpreted by SyncLogue AI context parser</p>
-                            </div>
-                            <span class="text-xs text-accentGreen font-mono bg-parchment px-2 py-1 rounded">Live Webhooks Active</span>
-                        </div>
-                        
-                        <div class="bg-parchment/50 border border-clay/10 p-4 rounded-lg mb-6 flex flex-wrap items-center justify-between gap-4">
-                            <div class="text-xs text-clay">
-                                <strong>Interactive Simulation Matrix:</strong> Fire actions here to update platform tracking intelligence instantly.
-                            </div>
-                            <div class="flex flex-wrap gap-2">
-                                <button onclick="injectTelemetry('commit')" class="bg-espresso text-cream hover:bg-clay text-xs px-3 py-1.5 rounded transition-all font-medium flex items-center gap-1">
-                                    <i data-lucide="git-commit" class="w-3.5 h-3.5"></i> Push Commit (+5)
-                                </button>
-                                <button onclick="injectTelemetry('pr')" class="bg-espresso text-cream hover:bg-clay text-xs px-3 py-1.5 rounded transition-all font-medium flex items-center gap-1">
-                                    <i data-lucide="git-pull-request" class="w-3.5 h-3.5"></i> Merge PR (+10)
-                                </button>
-                                <button onclick="injectTelemetry('silent')" class="bg-clay text-cream hover:bg-espresso text-xs px-3 py-1.5 rounded transition-all font-medium flex items-center gap-1">
-                                    <i data-lucide="message-square-code" class="w-3.5 h-3.5"></i> Silent Peer Assist (+7)
-                                </button>
-                            </div>
-                        </div>
+        <div id="developerContextView" class="space-y-10">
 
-                        <div class="space-y-3">
-                            <div>
-                                <div class="flex justify-between text-xs text-clay mb-1">
-                                    <span>AI Interpretation Confidence Score</span>
-                                    <span class="font-bold text-espresso">98.2%</span>
-                                </div>
-                                <div class="w-full bg-parchment h-2 rounded-full overflow-hidden">
-                                    <div class="bg-espresso h-full rounded-full transition-all duration-500" style="width: 98.2%"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="border border-clay/10 rounded-lg overflow-hidden bg-parchment/20 text-xs">
-                                <div class="bg-parchment/60 px-3 py-2 border-b border-clay/10 font-medium text-espresso flex justify-between">
-                                    <span>Captured Workspace Event Streams</span>
-                                    <span>Weight Multiplier</span>
-                                </div>
-                                <div id="telemetryLogStream" class="divide-y divide-clay/5 max-h-[180px] overflow-y-auto">
-                                    <div class="p-3 flex justify-between items-center bg-cream/40">
-                                        <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-accentGreen"></i> Fixed memory pointer leak inside C-struct buffer wrapper</span>
-                                        <span class="font-mono text-espresso font-semibold bg-parchment px-1.5 py-0.5 rounded text-[10px]">+8 Bug Resolution</span>
-                                    </div>
-                                    <div class="p-3 flex justify-between items-center">
-                                        <span class="flex items-center gap-2"><i data-lucide="eye" class="w-3.5 h-3.5 text-clay"></i> Reviewed PR #402: Spring Boot Architecture Data Layer Refactor</span>
-                                        <span class="font-mono text-espresso font-semibold bg-parchment px-1.5 py-0.5 rounded text-[10px]">+6 Silent Review</span>
-                                    </div>
-                                    <div class="p-3 flex justify-between items-center">
-                                        <span class="flex items-center gap-2"><i data-lucide="help-circle" class="w-3.5 h-3.5 text-accentAmber"></i> Spent 45m in Slack huddle pair-debugging configuration errors with junior dev</span>
-                                        <span class="font-mono text-espresso font-semibold bg-parchment px-1.5 py-0.5 rounded text-[10px]">+7 Silent Help (BIG USP)</span>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm w-full">
+        
+                <div class="flex items-center justify-between mb-4">
+        
+                    <div>
+                        <h2 class="heading-font text-lg font-bold text-espresso">
+                            Productivity Tracking Engine (GitHub Direct)
+                        </h2>
+        
+                        <p class="text-xs text-clay">
+                            Real-time source code mapping interpreted by SyncLogue AI context parser
+                        </p>
+                    </div>
+        
+                    <span class="text-xs text-accentGreen font-mono bg-parchment px-2 py-1 rounded">
+                        Live Webhooks Active
+                    </span>
+        
+                </div>
+        
+                <div class="bg-parchment/50 border border-clay/10 p-4 rounded-lg mb-6 flex flex-wrap items-center justify-between gap-4">
+        
+                    <div class="text-xs text-clay">
+                        <strong>Interactive Simulation Matrix:</strong>
+                        Fire actions here to update platform tracking intelligence instantly.
+                    </div>
+        
+                    <div class="flex flex-wrap gap-2">
+        
+                        <button onclick="injectTelemetry('commit')" class="bg-espresso text-cream hover:bg-clay text-xs px-3 py-1.5 rounded transition-all font-medium flex items-center gap-1">
+                            <i data-lucide="git-commit" class="w-3.5 h-3.5"></i>
+                            Push Commit (+5)
+                        </button>
+        
+                        <button onclick="injectTelemetry('pr')" class="bg-espresso text-cream hover:bg-clay text-xs px-3 py-1.5 rounded transition-all font-medium flex items-center gap-1">
+                            <i data-lucide="git-pull-request" class="w-3.5 h-3.5"></i>
+                            Merge PR (+10)
+                        </button>
+        
+                        <button onclick="injectTelemetry('silent')" class="bg-clay text-cream hover:bg-espresso text-xs px-3 py-1.5 rounded transition-all font-medium flex items-center gap-1">
+                            <i data-lucide="message-square-code" class="w-3.5 h-3.5"></i>
+                            Silent Peer Assist (+7)
+                        </button>
+        
+                    </div>
+        
+                </div>
+                <div class="space-y-3">
+                    <div>
+                        <div class="flex justify-between text-xs text-clay mb-1">
+                            <span>AI Interpretation Confidence Score</span>
+                            <span class="font-bold text-espresso">98.2%</span>
+                        </div>
+                        <div class="w-full bg-parchment h-2 rounded-full overflow-hidden">
+                            <div class="bg-espresso h-full rounded-full transition-all duration-500" style="width: 98.2%"></div>
                         </div>
                     </div>
-
-                
-
-                <div id="adminContextView" class="space-y-6 hidden">
                     
-                    <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h2 class="heading-font text-lg font-bold text-espresso">Workload Balancing & Team Burnout Telemetry</h2>
-                                <p class="text-xs text-clay">AI-powered team safety optimization metrics monitoring ecosystem velocity vs mental stress vectors.</p>
-                            </div>
-                            <span class="text-xs bg-red-100 text-red-800 font-medium px-2 py-1 rounded border border-red-200">1 Risk Alert</span>
+                    <div class="border border-clay/10 rounded-lg overflow-hidden bg-parchment/20 text-xs">
+                        <div class="bg-parchment/60 px-3 py-2 border-b border-clay/10 font-medium text-espresso flex justify-between w-full">
+                            <span>Captured Workspace Event Streams</span>
+                            <span>Weight Multiplier</span>
                         </div>
-
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                            <div class="border border-clay/10 p-3 rounded-lg bg-parchment/30">
-                                <span class="text-xs font-semibold uppercase text-clay block mb-2">Sprint Pressure Distribution Heatmap</span>
-                                <div class="space-y-2 text-xs">
-                                    <div>
-                                        <div class="flex justify-between mb-0.5"><span>Frontend Ecosystem Team</span> <span class="font-mono">82% (High Pressure)</span></div>
-                                        <div class="w-full bg-parchment h-1.5 rounded-full"><div class="bg-accentAmber h-full" style="width: 82%"></div></div>
-                                    </div>
-                                    <div>
-                                        <div class="flex justify-between mb-0.5"><span>Core Backend Engine Team</span> <span class="font-mono">48% (Optimal)</span></div>
-                                        <div class="w-full bg-parchment h-1.5 rounded-full"><div class="bg-accentGreen h-full" style="width: 48%"></div></div>
-                                    </div>
-                                    <div>
-                                        <div class="flex justify-between mb-0.5"><span>QA / Continuous Integration Pipelines</span> <span class="font-mono">21% (Underutilized)</span></div>
-                                        <div class="w-full bg-parchment h-1.5 rounded-full"><div class="bg-clay h-full" style="width: 21%"></div></div>
-                                    </div>
-                                </div>
+                        <div id="telemetryLogStream" class="divide-y divide-clay/5 max-h-[180px] overflow-y-auto">
+                            <div class="p-3 flex justify-between items-center bg-cream/40">
+                                <span class="flex items-center gap-2"><i data-lucide="check-circle" class="w-3.5 h-3.5 text-accentGreen"></i> Fixed memory pointer leak inside C-struct buffer wrapper</span>
+                                <span class="font-mono text-espresso font-semibold bg-parchment px-1.5 py-0.5 rounded text-[10px]">+8 Bug Resolution</span>
                             </div>
-
-                            <div class="border border-clay/10 p-3 rounded-lg bg-parchment/30 text-xs flex flex-col justify-between">
-                                <div>
-                                    <span class="text-xs font-semibold uppercase text-clay block mb-1">AI Smart Suggestions Engine</span>
-                                    <p class="text-clay/90 leading-relaxed text-[11px]">
-                                        <strong class="text-espresso">Detection:</strong> Continuous late-night commit behaviors detected in Frontend Framework clusters over 4 consecutive calendar days.
-                                    </p>
-                                </div>
-                                <div class="bg-cream p-2 rounded border border-clay/10 flex items-center justify-between mt-2">
-                                    <span class="text-[11px] text-espresso italic">Suggested: Reallocate 3 critical frontend tickets to Core Backup Contributors</span>
-                                    <button class="bg-espresso text-cream text-[10px] px-2 py-1 rounded hover:bg-clay transition-colors">Deploy</button>
-                                </div>
+                            <div class="p-3 flex justify-between items-center">
+                                <span class="flex items-center gap-2"><i data-lucide="eye" class="w-3.5 h-3.5 text-clay"></i> Reviewed PR #402: Spring Boot Architecture Data Layer Refactor</span>
+                                <span class="font-mono text-espresso font-semibold bg-parchment px-1.5 py-0.5 rounded text-[10px]">+6 Silent Review</span>
+                            </div>
+                            <div class="p-3 flex justify-between items-center">
+                                <span class="flex items-center gap-2"><i data-lucide="help-circle" class="w-3.5 h-3.5 text-accentAmber"></i> Spent 45m in Slack huddle pair-debugging configuration errors with junior dev</span>
+                                <span class="font-mono text-espresso font-semibold bg-parchment px-1.5 py-0.5 rounded text-[10px]">+7 Silent Help (BIG USP)</span>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
-                        <h2 class="heading-font text-lg font-bold text-espresso mb-1">Team & Departmental Workspace Settings</h2>
-                        <p class="text-xs text-clay mb-4">Provision enterprise nodes, handle access rulesets, and manage high-level org parameters.</p>
-                        
-                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
-                            <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
-                                <i data-lucide="plus-circle" class="w-4 h-4 mx-auto mb-1"></i> New Sub-Team
-                            </button>
-                            <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
-                                <i data-lucide="user-plus" class="w-4 h-4 mx-auto mb-1"></i> Outbound Invite
-                            </button>
-                            <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
-                                <i data-lucide="network" class="w-4 h-4 mx-auto mb-1"></i> Org Topology
-                            </button>
-                            <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
-                                <i data-lucide="sliders" class="w-4 h-4 mx-auto mb-1"></i> Compliance Keys
-                            </button>
+            <div id="adminContextView" class="space-y-6 hidden">
+                    
+                <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="heading-font text-lg font-bold text-espresso">Workload Balancing & Team Burnout Telemetry</h2>
+                            <p class="text-xs text-clay">AI-powered team safety optimization metrics monitoring ecosystem velocity vs mental stress vectors.</p>
+                        </div>
+                        <span class="text-xs bg-red-100 text-red-800 font-medium px-2 py-1 rounded border border-red-200">1 Risk Alert</span>
+                    </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div class="border border-clay/10 p-3 rounded-lg bg-parchment/30">
+                            <span class="text-xs font-semibold uppercase text-clay block mb-2">Sprint Pressure Distribution Heatmap</span>
+                            <div class="space-y-2 text-xs">
+                                <div>
+                                    <div class="flex justify-between mb-0.5"><span>Frontend Ecosystem Team</span> <span class="font-mono">82% (High Pressure)</span></div>
+                                    <div class="w-full bg-parchment h-1.5 rounded-full"><div class="bg-accentAmber h-full" style="width: 82%"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-0.5"><span>Core Backend Engine Team</span> <span class="font-mono">48% (Optimal)</span></div>
+                                    <div class="w-full bg-parchment h-1.5 rounded-full"><div class="bg-accentGreen h-full" style="width: 48%"></div></div>
+                                </div>
+                                <div>
+                                    <div class="flex justify-between mb-0.5"><span>QA / Continuous Integration Pipelines</span> <span class="font-mono">21% (Underutilized)</span></div>
+                                    <div class="w-full bg-parchment h-1.5 rounded-full"><div class="bg-clay h-full" style="width: 21%"></div></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-clay/10 p-3 rounded-lg bg-parchment/30 text-xs flex flex-col justify-between">
+                            <div>
+                                <span class="text-xs font-semibold uppercase text-clay block mb-1">AI Smart Suggestions Engine</span>
+                                <p class="text-clay/90 leading-relaxed text-[11px]">
+                                    <strong class="text-espresso">Detection:</strong> Continuous late-night commit behaviors detected in Frontend Framework clusters over 4 consecutive calendar days.
+                                </p>
+                            </div>
+                            <div class="bg-cream p-2 rounded border border-clay/10 flex items-center justify-between mt-2">
+                                <span class="text-[11px] text-espresso italic">Suggested: Reallocate 3 critical frontend tickets to Core Backup Contributors</span>
+                                <button class="bg-espresso text-cream text-[10px] px-2 py-1 rounded hover:bg-clay transition-colors">Deploy</button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
+                    <h2 class="heading-font text-lg font-bold text-espresso mb-1">Team & Departmental Workspace Settings</h2>
+                    <p class="text-xs text-clay mb-4">Provision enterprise nodes, handle access rulesets, and manage high-level org parameters.</p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
+                        <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
+                            <i data-lucide="plus-circle" class="w-4 h-4 mx-auto mb-1"></i> New Sub-Team
+                        </button>
+                        <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
+                            <i data-lucide="user-plus" class="w-4 h-4 mx-auto mb-1"></i> Outbound Invite
+                        </button>
+                        <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
+                            <i data-lucide="network" class="w-4 h-4 mx-auto mb-1"></i> Org Topology
+                        </button>
+                        <button class="p-3 bg-parchment hover:bg-clay hover:text-cream border border-clay/10 rounded-lg font-medium transition-all">
+                            <i data-lucide="sliders" class="w-4 h-4 mx-auto mb-1"></i> Compliance Keys
+                        </button>
+                    </div>
+                </div>
+            </div>
+             
                 <div class="bg-cream border border-clay/20 rounded-xl p-6 shadow-sm">
                     <h2 class="heading-font text-base font-bold text-espresso mb-3">SyncLogue Unfair Value Advantage Index</h2>
                     <div class="overflow-x-auto">
@@ -568,16 +590,12 @@ class="fixed bottom-6 right-28 z-50 w-14 h-14 rounded-full
 
 </button>
 
-<!-- AI CHAT WINDOW -->
-
 <div 
 id="aiChatWindow"
 class="hidden fixed bottom-24 right-28 z-50 
        w-[320px] bg-cream border border-clay/20 
        rounded-3xl shadow-2xl overflow-hidden"
 >
-
-<!-- HEADER -->
 <div class="bg-espresso text-white px-4 py-3 flex items-center gap-2">
 
     <i data-lucide="sparkles" class="w-4 h-4"></i>
@@ -588,7 +606,6 @@ class="hidden fixed bottom-24 right-28 z-50
 
 </div>
 
-<!-- CHAT -->
 <div 
     id="chatMessages"
     class="h-[300px] overflow-y-auto p-4 space-y-3 bg-parchment/20"
@@ -600,7 +617,6 @@ class="hidden fixed bottom-24 right-28 z-50
 
 </div>
 
-<!-- INPUT -->
 <div class="border-t border-clay/10 p-3 flex gap-2 bg-cream">
 
     <input
