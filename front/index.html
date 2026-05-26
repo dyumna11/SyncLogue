@@ -521,29 +521,41 @@
         async function fetchGitHubData() {
 
             const username =
-                document.getElementById("githubUser").value;
-
-            const response = await fetch(
-                `http://127.0.0.1:8000/github/${username}`
-            );
-
-            const data = await response.json();
-            document.getElementById("metricScore").innerHTML=data.public_repos;
-            document.getElementById("metricSilent").innerHTML =data.followers + " Followers";
-            document.getElementById("metricStreak").innerHTML =data.following + " Following";
-
-            if (data.message==="Not Found"){
-                document.getElementById("result").innerHTML="User Not Found";
+                document.getElementById("githubUser").value.trim();
+            if(!username){
+                document.getElementById("result").innerHTML="enter username";
                 return;
+            }
+            try{
+                const response=await fetch(
+                `http://127.0.0.1:8000/github/${username}`);
+                const data = await response.json();
+                if (data.message === "Not Found") {
+                    document.getElementById("result").innerHTML ="User Not Found";
+                    return;
 
             }
+            
+
+            
+            document.getElementById("metricScore").innerText=data.public_repos;
+            document.getElementById("metricSilent").innerText =`${data.followers} Followers`;
+            document.getElementById("metricStreak").innerText =`${data.following} Following`;
 
             document.getElementById("result").innerHTML =
             `
-                Name: ${data.name} <br>
+                Name: ${data.name || username} <br>
                 Followers: ${data.followers} <br>
                 Public Repos: ${data.public_repos}
                 `;
+
+            }catch (err) {
+                console.log(err);
+                document.getElementById("result").innerHTML ="Backend connection failed";
+            }
+
+
+            
         }
     
         // Reactive Core Internal Telemetry State Values

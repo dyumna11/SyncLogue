@@ -1,10 +1,10 @@
+from database import collection
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import requests
 
 app = FastAPI()
 
-# CORS FIX
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -24,4 +24,17 @@ def github_user(username: str):
 
     response = requests.get(url)
 
-    return response.json()
+    data = response.json()
+
+    if data.get("message") == "Not Found":
+        return data
+
+    collection.insert_one({
+        "username": data["login"],
+        "repos": data["public_repos"],
+        "followers": data["followers"],
+        "following": data["following"],
+        "avatar": data["avatar_url"]
+    })
+
+    return data
